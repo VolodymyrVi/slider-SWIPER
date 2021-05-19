@@ -58,17 +58,19 @@ body {
 
 .block__side {
     flex: 0 0 300px;
-    background: #77608d;
+    background-color: #330;
 }
 
 .block__body {
-    padding: 0 0 0 30px;
+    padding: 0px 0px 0px 30px;
     flex: 1 1 auto;
+
     min-width: 0;
 }
-
-ergeg
-/* .image-slider__wripper {}
+.image-slider{
+    padding: 30px 0 70px 0;
+}
+/* .image-slider__wrapper {}
 
 .image-slider__slide {} */
 
@@ -78,4 +80,22 @@ ergeg
 
 .image-slider__image img {
     max-width: 100%;
+}
+/* стрелки */
+.image-slider .swiper-button-prev::after,
+.image-slider .swiper-button-next::after{
+    color: lawngreen;
+    font-size: 90px;
+}
+/* Пагинация */
+.image-slider .swiper-pagination{
+    bottom: 0;
+}
+/* Буллеты */
+.image-slider .swiper-pagination-bullet{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    background-color: #fff;
 }
